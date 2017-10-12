@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=VCLASSICCOIN
+Comment=VCLASSICCOIN P2P Cryptocurrency
+Comment[ru]=VCLASSICCOIN, P2P криптовалюта
+Comment[fr]=VCLASSICCOIN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=VCLASSICCOIN, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/VCLASSICCOIN-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/VCLASSICCOIN80.xpm
+MimeType=x-scheme-handler/VCLASSICCOIN;
+Categories=Office;

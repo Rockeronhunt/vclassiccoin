@@ -1,0 +1,11 @@
+[Protocol]
+exec=VCLASSICCOIN-qt '%u'
+protocol=VCLASSICCOIN
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

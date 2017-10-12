@@ -1,0 +1,5 @@
+VCLASSICCOIN-qt usr/bin
+share/pixmaps/VCLASSICCOIN32.xpm usr/share/pixmaps
+share/pixmaps/VCLASSICCOIN80.xpm usr/share/pixmaps
+debian/VCLASSICCOIN-qt.desktop usr/share/applications
+debian/VCLASSICCOIN-qt.protocol usr/share/kde4/services/
