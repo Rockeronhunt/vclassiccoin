@@ -1058,13 +1058,6 @@ int64_t GetProofOfWorkReward(unsigned int nBits, int64_t nFees, int nHeight)
 	
 	if (nHeight == 1)
 		return 100000000 * COIN;
-    
-	// Force block reward to zero when right shift is undefined.
-    int halvings = nHeight / 840000;
-    if (halvings >= 64)
-        return nFees;
-		
-	nSubsidy >>= halvings;
 	
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nBits=0x%08x nSubsidy=%" PRId64 "\n", FormatMoney(nSubsidy).c_str(), nBits, nSubsidy);
@@ -1152,7 +1145,7 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
 
     if (pindexLast == NULL)
         return bnTargetLimit.GetCompact(); // genesis block
-
+		
     const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
     if (pindexPrev->pprev == NULL)
         return bnTargetLimit.GetCompact(); // first block
